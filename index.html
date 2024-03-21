@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>製品別原材料産地マップ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>html,body{height:100%;}body{padding:0;margin:0;}h1{padding:0;margin:0;font-size:50%;}</style>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- JQuery -->
+
+<!-- MAP[START] -->
+<div id="myMap" style='width:100%;height:600px;'></div>
+<!-- MAP[END] -->
+
+
+<!-- 製品原材料アコーディオン -->
+  <details class="details js-details">
+    <summary class="details-summary js-details-summary"><span class="btn"></span>[薬用]凜恋/rinRen シャンプー ミント＆レモン 400mL</summary>
+    <div class="details-content js-details-content">
+      <p>有効成分：グリチルリチン酸ジカリウム
+        その他の成分：センブリエキス、ドクダミエキス、海藻エキス(1)、タケノコ皮抽出液、ゴボウエキス、トウキエキス(１)、オリーブ葉エキス、レモン果汁、チンピエキス、コメ発酵液、マルトース・ショ糖縮合物、ベントナイト、精製水、クエン酸、クエン酸ナトリウム、I-メントール、塩化Oー[２ーヒドロキシー３ー(トリメチルアンモニオ)プロピル]ヒドロキシエチルセルロース、塩化ジメチルジアリルアンモニウム・アクリルアミド共重合体液、ラウリン酸アミドプロピルベタイン液、ラウロイルメチルーβーアラニンナトリウム液、ヤシ油脂肪酸メチルタウリンナトリウム、ヤシ油脂肪酸Nーメチルエタノールアミド、Nーヤシ油脂肪酸アシルグリシンナトリウム、ヒドロキシエタンジホスホン酸液、ヒドロキシエタンジホスホン酸四ナトリウム液、トリメチルグリシン、グリセリンモノ２ーエチルヘキシルエーテル、１，２ーペンタンジオール、１，３ーブチレングリコール、ポリオキシエチレンヤシ油脂肪酸グリセリル、モノステアリン酸ポリエチレングリコール、フェノキシエタノール、無水エタノール、香料※</p>
+        <button id="product01">原材料産地を確認</button>
+    </div>
+  </details>
+
+  <details class="details js-details">
+    <summary class="details-summary js-details-summary"><span class="btn"></span>[薬用]凜恋/rinRen シャンプー カモミール＆モミ 400mL</summary>
+    <div class="details-content js-details-content">
+      <p>有効成分：グリチルリチン酸ジカリウム
+        その他の成分：トウキエキス（１）、チンピエキス、シラカバエキス、ヨクイニンエキス、海藻エキス (１)、オリーブ葉エキス、ゲットウ葉エキス、ハマナスエキス、チャエキス(１)、イネ出穂前葉抽出加水分解物、マルトース・ショ糖縮合物、精製水、クエン酸、クエン酸ナトリウム、塩化O ー[２ーヒドロキシー３ー(トリメチルアンモニオ)プロピル]ヒドロキシエチルセルロース、塩化ジメチルジアリルアンモニウム・アクリルアミド共重合体液、ラウリン酸アミドプロピルベタイン液、ラウロイルメチルーβーアラニンナトリウム液、ヤシ油脂肪酸メチルタウリンナトリウム、ヤシ油脂肪酸Nーメチルエタノールアミド、Nーヤシ油脂肪酸アシルグリシンナトリウム、ヒドロキシエタンジホスホン酸液、ヒドロキシエタンジホスホン酸四ナトリウム液、トリメチルグリシン、グリセリンモノ２ーエチルヘキシルエーテル、１，２ーペンタンジオール、１，３ーブチレングリコール、ポリオキシエチレンヤシ油脂肪酸グリセリル、モノステアリン酸ポリエチレングリコール、安息香酸ナトリウム、フェノキシエタノール、エタノール、香料※
+        ※天然由来香料のみ使用</p>
+        <button id="product02">原材料産地を確認</button>
+    </div>
+  </details>
+  
+  <details class="details js-details">
+    <summary class="details-summary js-details-summary"><span class="btn"></span>凜恋/rinRen（リンレン） シャンプー ローズ＆ツバキ 480mL</summary>
+    <div class="details-content js-details-content">
+      <p>水、コカミドプロピルベタイン、ラウラミドDEA、ココイルメチルタウリンNa、ラウロイルメリチルアラニンNa、ココイルグルタミン酸TEA、ココイルグルタミン酸K、ココイルリンゴアミノ酸Na、ハイブリッドローズ花水、ハイブリッドローズ花エキス、ダマスクバラ花水、ツバキ花エキス、ツバキ種子油、アカモクエキス、シャクヤク根エキス、メリッサ葉エキス、豆乳発酵液、スイゼンジノリ多糖体、ノバラ油、ラベンダー油、ニオイテンジクアオイ油、ライム油、ヤシ油脂肪酸PEGー７グリセリル、ポリクオタニウムー１０、ベタイン、ヒドロキシプロピルシクロデキストリン、ブチルカルバミン酸ヨウ化プロピニル、プロパンジオール、エチドロン酸、エチドロン酸4Na、クエン酸、BG、フェノキシエタノール</p>
+      <button id="product03">原材料産地を確認</button>
+    </div>
+  </details>
+
+  <details class="details js-details">
+    <summary class="details-summary js-details-summary"><span class="btn"></span>rinRen リペア オールインワンシャンプー ミモザ&ミント 380mL</summary>
+    <div class="details-content js-details-content">
+      <p>水、コカミドプロピルベタイン、ラウラミドDEA、ココイルメチルタウリンNa、ラウロイルメリチルアラニンNa、ココイルグルタミン酸TEA、ココイルグルタミン酸K、ココイルリンゴアミノ酸Na、ハイブリッドローズ花水、ハイブリッドローズ花エキス、ダマスクバラ花水、ツバキ花エキス、ツバキ種子油、アカモクエキス、シャクヤク根エキス、メリッサ葉エキス、豆乳発酵液、スイゼンジノリ多糖体、ノバラ油、ラベンダー油、ニオイテンジクアオイ油、ライム油、ヤシ油脂肪酸PEGー７グリセリル、ポリクオタニウムー１０、ベタイン、ヒドロキシプロピルシクロデキストリン、ブチルカルバミン酸ヨウ化プロピニル、プロパンジオール、エチドロン酸、エチドロン酸4Na、クエン酸、BG、フェノキシエタノール</p>
+      <button id="product03">原材料産地を確認</button>
+    </div>
+  </details>
+
+  <details class="details js-details">
+    <summary class="details-summary js-details-summary"><span class="btn"></span>rinRen（凜恋 リンレン）リペアヘアオイルキンモクセイ 80mL</summary>
+    <div class="details-content js-details-content">
+      <p>水、コカミドプロピルベタイン、ラウラミドDEA、ココイルメチルタウリンNa、ラウロイルメリチルアラニンNa、ココイルグルタミン酸TEA、ココイルグルタミン酸K、ココイルリンゴアミノ酸Na、ハイブリッドローズ花水、ハイブリッドローズ花エキス、ダマスクバラ花水、ツバキ花エキス、ツバキ種子油、アカモクエキス、シャクヤク根エキス、メリッサ葉エキス、豆乳発酵液、スイゼンジノリ多糖体、ノバラ油、ラベンダー油、ニオイテンジクアオイ油、ライム油、ヤシ油脂肪酸PEGー７グリセリル、ポリクオタニウムー１０、ベタイン、ヒドロキシプロピルシクロデキストリン、ブチルカルバミン酸ヨウ化プロピニル、プロパンジオール、エチドロン酸、エチドロン酸4Na、クエン酸、BG、フェノキシエタノール</p>
+      <button id="product03">原材料産地を確認</button>
+    </div>
+  </details>
+
+<script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=************APIKEY************' async defer></script>
+<script src="./js/BmapQuery.js"></script>
+
+<!-- マップの動作 -->
+<script>
+    //init
+    function GetMap() {
+        //------------------------------------------------------------------------
+        //1. Instance
+        //------------------------------------------------------------------------
+        const map = new Bmap("#myMap");
+        //------------------------------------------------------------------------
+        //2. Display Map
+        //------------------------------------------------------------------------
+        map.startMap(35.039500, 135.728500, "grayscale", 5);
+    
+
+        //----------------------------------------------------
+        //3. Infobox
+        //   options = new Array();
+        //   options[index] = { lat, lon, width, height, title, pinColor, description, show };
+        //----------------------------------------------------
+        
+        // 製品１のinfoboxの情報を設定
+        const option01 = [];
+        option01[0]={
+            "lat":43.069207,
+            "lon":141.354286,
+            "title":"北海道産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": '和ハッカ<br><img src="./img/camomile.jpg" width="100">',
+            "show":false
+        };
+        option01[1]={
+            "lat":34.411887, 
+            "lon":132.461544,
+            "title":"広島県産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": 'レモン果汁<br><img src="./img/mate.jpg" width="300">',
+            "show":false
+        };
+        option01[2]={
+            "lat":35.026852,
+            "lon":135.798248,
+            "title":"香川県",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": 'オリーブ葉エキス<br><img src="./img/rosemary.jpg" width="300">',
+            "show":false
+        };
+
+        // 製品２のinfoboxの情報を設定
+        const option02 = [];
+        option02[0]={
+            "lat":26.213654,
+            "lon":127.681980,
+            "title":"沖縄県産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": '月桃葉エキス<br><img src="./img/elderflower.jpg" width="100">',
+            "show":false
+        };
+        option02[1]={
+            "lat":37.878883,
+            "lon":139.089510,
+            "title":"新潟県産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": '加水分解イネ葉エキス<br><img src="./img/mate.jpg" width="300">',
+            "show":false
+        };
+        option02[2]={
+            "lat":43.069207,
+            "lon":141.354286,
+            "title":"北海道産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": 'モミの葉油<br><img src="./img/rosemary.jpg" width="300">',
+            "show":false
+        };
+
+      // 製品３のinfoboxの情報を設定
+      const option03 = [];
+        option03[0]={
+            "lat":34.687924, 
+            "lon":135.815782,
+            "title":"奈良県産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": 'シャクヤク根エキス<br><img src="./img/elderflower.jpg" width="100">',
+            "show":false
+        };
+        option03[1]={
+            "lat":35.459044, 
+            "lon":133.070096,
+            "title":"島根県産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": 'ローズ花エキス<br><img src="./img/mate.jpg" width="300">',
+            "show":false
+        };
+        option03[2]={
+            "lat":33.580167, 
+            "lon":130.431855,
+            "title":"福岡県産",
+            "pinColor":"#f2a2b9",
+            "height":300,
+            "width":300,
+            "description": 'スイゼンジ海苔エキス<br><img src="./img/rosemary.jpg" width="300">',
+            "show":false
+        };
+
+
+        //----------------------------------------------------
+        //4. Switch infoboxs
+        //   infoboxLayers(options, true); //true=one, false=Multiple
+        //----------------------------------------------------
+        
+        // 製品１のボタンクリック時の処理を設定
+        $('#product01').click(function() {
+            map.startMap(35.039500, 135.728500, "grayscale", 5);
+            map.infoboxLayers(option01,true);
+        });
+
+        // 製品２のボタンクリック時の処理を設定
+        $('#product02').click(function() {
+            map.startMap(35.039500, 135.728500, "grayscale", 5);
+            map.infoboxLayers(option02,true);
+        });
+        
+        // 製品３のボタンクリック時の処理を設定
+        $('#product03').click(function() {
+            map.startMap(35.039500, 135.728500, "grayscale", 5);
+            map.infoboxLayers(option03,true);
+        });
+    
+
+    }
+
+
+//アコーディオンの動作
+let accordionDetails = '.js-details';
+let accordionSummary = '.js-details-summary';
+let accordionContent = '.js-details-content';
+let speed = 500;
+
+$(accordionSummary).each(function() {
+  $(this).on("click", function(event) {
+    // summaryにis-activeクラスを切り替え
+    $(this).toggleClass("is-active");
+    // デフォルトの挙動を無効化
+    event.preventDefault();
+
+    if ($(this).parent($(accordionDetails)).attr("open")) {
+      // アコーディオンを閉じるときの処理
+      $(this).nextAll($(accordionContent)).slideUp(speed, function() {
+        // アニメーションの完了後にopen属性を取り除く
+        $(this).parent($(accordionDetails)).removeAttr("open");
+        // display:none;を消して、ページ内検索にヒットするようにする
+        $(this).show();
+      });
+    } else {
+      // アコーディオンを開くときの処理
+      $(accordionSummary).not($(this)).removeClass("is-active");
+      $(accordionContent).not($(this).nextAll($(accordionContent))).slideUp(speed, function() {
+        // アニメーションの完了後、すでに開いているアコーディオンのopen属性を取り除く
+        $(this).parent($(accordionDetails)).removeAttr("open");
+        $(this).show();
+      });
+      // クリックしたアコーディオンを開く
+      $(this).parent($(accordionDetails)).attr("open", "true");
+      $(this).nextAll($(accordionContent)).hide().slideDown(speed);
+    }
+  })
+});
+
+</script>
+</body>
+</html>
